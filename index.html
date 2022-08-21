@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+    <script defer src="./main.js" type="module"></script>
+    <title>Webify 2.0</title>
+  </head>
+  <body>
+    <div class="empty-todo">No Todos</div>
+    <header class="heading">
+      <div class="header-container">
+        <h1>Welcome to Webify 2.0</h1>
+        <div class="theme-switch-wrapper">
+          <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </span>
+          <label class="theme-switch">
+            <input type="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <form>
+        <div class="error-msg"></div>
+        <input type="text" name="Title" placeholder="Title" />
+        <input type="text" name="Description" placeholder="Description" />
+        <select name="category" id="category">
+          <option value="category" selected disabled>Category</option>
+          <option value="sports">Sports</option>
+          <option value="games">Games</option>
+          <option value="study">Study</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="other">Others</option>
+        </select>
+        <button type="submit" class="button">Add Task</button>
+      </form>
+
+      <section class="todo-wrapper">
+        <button class="delete-btn disable">Delete Items</button>
+        <ul class="todos">
+          <!-- <li class="todo">
+            <input type="checkbox" />
+            <div>
+              <h3>Design sign up flow</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto, voluptatibus!
+              </p>
+              <span class="toto-category">Sports</span>
+              <div class="date"></div>
+            </div>         
+          </li> -->
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
